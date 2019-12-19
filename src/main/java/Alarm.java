@@ -21,7 +21,7 @@ public class Alarm {
 
     public static boolean isAlarm() {
         int current_minute = Integer.parseInt(dtf.format(LocalDateTime.now()));
-        if (current_minute%1==0) {
+        if (current_minute==0) {
             return true;
         } else {
             return false;
